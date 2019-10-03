@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 #include <cmath>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
+#include <glm/gtc/type_ptr.hpp>
+#include <glm/vec3.hpp> // glm::vec3
+#include <glm/vec4.hpp> // glm::vec4
+#include <glm/mat4x4.hpp> // glm::mat4
+
 
 // Include GLEW Extension Wrangler
 #include <GL/glew.h>
@@ -12,7 +19,7 @@
 
 const GLint WIDTH = 800, HEIGHT = 600;
 
-GLuint VAO, VBO, shader, uniformXMove;
+GLuint VAO, VBO, shader, uniformModel;
 
 bool direction = true;
 float triOffset = 0.0f;
@@ -26,11 +33,11 @@ float triIncrement  = 0.005f;
 static const char* vShader = R""""(
 #version 330
 layout (location = 0) in vec3 pos;
-uniform float xMove;
+uniform mat4 model;
 
 void main()
 {
-  gl_Position = vec4(0.4 * pos.x + xMove, 0.4 * pos.y, pos.z, 1.0);
+  gl_Position = model * vec4(0.4 * pos.x, 0.4 * pos.y, pos.z, 1.0);
 }
 )"""";
 
@@ -160,7 +167,7 @@ void CompileShaders()
         return;
     }
 
-    uniformXMove = glGetUniformLocation(shader, "xMove");
+    uniformModel = glGetUniformLocation(shader, "model");
 }
 
 int main(void) {
@@ -244,7 +251,10 @@ int main(void) {
 
         glUseProgram(shader);
 
-        glUniform1f(uniformXMove, triOffset);
+        glm::mat4 model;
+        model = glm::translate(model, glm::vec3(triOffset, triOffset, 0.0f));
+
+        glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
 
         glBindVertexArray(VAO);
 
