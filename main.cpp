@@ -1,6 +1,7 @@
 // Include standard input output
 #include <stdio.h>
 #include <string.h>
+#include <cmath>
 
 // Include GLEW Extension Wrangler
 #include <GL/glew.h>
@@ -11,7 +12,13 @@
 
 const GLint WIDTH = 800, HEIGHT = 600;
 
-GLuint VAO, VBO, shader;
+GLuint VAO, VBO, shader, uniformXMove;
+
+bool direction = true;
+float triOffset = 0.0f;
+float triMaxOffset = 0.7f;
+float triIncrement  = 0.005f;
+
 
 // Vertex shader
 // GL(SL) Shader Language version
@@ -19,9 +26,11 @@ GLuint VAO, VBO, shader;
 static const char* vShader = R""""(
 #version 330
 layout (location = 0) in vec3 pos;
+uniform float xMove;
+
 void main()
 {
-  gl_Position = vec4(0.4 * pos.x, 0.4 * pos.y, pos.z, 1.0);
+  gl_Position = vec4(0.4 * pos.x + xMove, 0.4 * pos.y, pos.z, 1.0);
 }
 )"""";
 
@@ -150,6 +159,8 @@ void CompileShaders()
         printf("Program is not valid: %s\n", eLog);
         return;
     }
+
+    uniformXMove = glGetUniformLocation(shader, "xMove");
 }
 
 int main(void) {
@@ -213,10 +224,27 @@ int main(void) {
     glClearColor(0.5f, 0.5f, 0.4f, 0.0f);
 
     while (glfwGetKey(mainWindow, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(mainWindow) == 0) {
+        glfwPollEvents();
+
+        if (direction)
+        {
+            triOffset += triIncrement;
+        } else
+        {
+            triOffset -= triIncrement;
+        }
+
+        if (abs(triOffset) > triMaxOffset)
+        {
+            direction = !direction;
+        }
+
         // Clear the colors buffer
         glClear(GL_COLOR_BUFFER_BIT);
 
         glUseProgram(shader);
+
+        glUniform1f(uniformXMove, triOffset);
 
         glBindVertexArray(VAO);
 
@@ -228,7 +256,6 @@ int main(void) {
 
         // Swap buffers
         glfwSwapBuffers(mainWindow);
-        glfwPollEvents();
 
     }
 
