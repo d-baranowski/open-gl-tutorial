@@ -38,7 +38,7 @@ uniform mat4 model;
 
 void main()
 {
-  gl_Position = model * vec4(0.4 * pos.x, 0.4 * pos.y, pos.z, 1.0);
+  gl_Position = model * vec4(pos, 1.0);
 }
 )"""";
 
@@ -258,6 +258,7 @@ int main(void) {
         model = glm::rotate(model,  360 * triOffset * toRadians, glm::vec3(0,0,1));
         // Order of transformations matter! This way the translation left and rate is relative to current rotation
         model = glm::translate(model, glm::vec3(triOffset, triOffset, 0.0f));
+        model = glm::scale(model, glm::vec3(triOffset, triOffset, 0.0f));
 
         // The triangle gets weirdly distorted because the coordinate system is relative to the screen which isn't square but rectangle
 
