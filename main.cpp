@@ -102,11 +102,6 @@ void CreateTriangle()
     // Specify the offset of the first value from the start
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
     glEnableVertexAttribArray(0);
-
-
-    glBindVertexArray(0);
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 
 void AddShader(GLuint theProgram, const char * shaderCode, GLenum shaderType)
@@ -298,7 +293,6 @@ int main(void) {
 
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
         glBindVertexArray(0);
-
         glUseProgram(0);
 
         // Swap buffers
