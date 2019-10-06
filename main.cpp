@@ -34,11 +34,14 @@ float triIncrement  = 0.005f;
 static const char* vShader = R""""(
 #version 330
 layout (location = 0) in vec3 pos;
+
+out vec4 vColor;
 uniform mat4 model;
 
 void main()
 {
   gl_Position = model * vec4(pos, 1.0);
+  vColor = vec4(clamp(pos, 0.0f, 1.0f), 1.0f);
 }
 )"""";
 
@@ -48,11 +51,13 @@ void main()
 // Return value of the vertex shader 1 vertex -> 1 position
 static const char* fShader = R""""(
 #version 330
+
+in vec4 vColor;
 out vec4 color;
 
 void main()
 {
-  color = vec4(1.0, 0.0, 0.0, 1.0);
+  color = vColor;
 }
 )"""";
 
