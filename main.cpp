@@ -20,7 +20,7 @@
 const GLint WIDTH = 800, HEIGHT = 600;
 const float toRadians = 3.1415926535 / 180.0f; // Multiply by this to get a radians from angle
 
-GLuint VAO, VBO, IBO, shader, uniformModel;
+GLuint VAO, VBO, IBO, shader, uniformModel, uniformProjection;
 
 bool direction = true;
 float triOffset = 0.0f;
@@ -37,10 +37,11 @@ layout (location = 0) in vec3 pos;
 
 out vec4 vColor;
 uniform mat4 model;
+uniform mat4 projection;
 
 void main()
 {
-  gl_Position = model * vec4(pos, 1.0);
+  gl_Position = projection * model * vec4(pos, 1.0);
   vColor = vec4(clamp(pos, 0.0f, 1.0f), 1.0f);
 }
 )"""";
@@ -188,6 +189,7 @@ void CompileShaders()
     }
 
     uniformModel = glGetUniformLocation(shader, "model");
+    uniformProjection =  glGetUniformLocation(shader, "projection");
 }
 
 int main(void) {
@@ -246,6 +248,8 @@ int main(void) {
     CreateTriangle();
     CompileShaders();
 
+    glm::mat4 projection = glm::perspective(45.0f, (GLfloat)bufferWidth / (GLfloat)bufferHeight, 0.1f, 100.0f);
+
     // Ensure we can capture the escape key being pressed below
     glfwSetInputMode(mainWindow, GLFW_STICKY_KEYS, GL_TRUE);
 
@@ -275,20 +279,16 @@ int main(void) {
 
         glm::mat4 model;
 
-
-        // Order of transformations matter! This way the translation left and rate is relative to current rotation
-
-
         // Rotate around y axis by
+        model = glm::translate(model,  glm::vec3(0,0,-3));
         model = glm::rotate(model,  360 * triOffset * toRadians, glm::vec3(0,1,0));
-
-
         model = glm::scale(model, glm::vec3(0.4, 0.4, 0.4));
 
-        // The triangle gets weirdly distorted because the coordinate system is relative to the screen which isn't square but rectangle
+
 
 
         glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
+        glUniformMatrix4fv(uniformProjection, 1, GL_FALSE, glm::value_ptr(projection));
 
         glBindVertexArray(VAO);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO);
