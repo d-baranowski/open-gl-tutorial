@@ -18,6 +18,7 @@
 
 
 const GLint WIDTH = 800, HEIGHT = 600;
+const float toRadians = 3.1415926535 / 180.0f; // Multiply by this to get a radians from angle
 
 GLuint VAO, VBO, shader, uniformModel;
 
@@ -252,7 +253,14 @@ int main(void) {
         glUseProgram(shader);
 
         glm::mat4 model;
+
+        // Rotate around z axis by
+        model = glm::rotate(model,  360 * triOffset * toRadians, glm::vec3(0,0,1));
+        // Order of transformations matter! This way the translation left and rate is relative to current rotation
         model = glm::translate(model, glm::vec3(triOffset, triOffset, 0.0f));
+
+        // The triangle gets weirdly distorted because the coordinate system is relative to the screen which isn't square but rectangle
+
 
         glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
 
