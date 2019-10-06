@@ -20,7 +20,7 @@
 const GLint WIDTH = 800, HEIGHT = 600;
 const float toRadians = 3.1415926535 / 180.0f; // Multiply by this to get a radians from angle
 
-GLuint VAO, VBO, shader, uniformModel;
+GLuint VAO, VBO, IBO, shader, uniformModel;
 
 bool direction = true;
 float triOffset = 0.0f;
@@ -63,8 +63,16 @@ void main()
 
 void CreateTriangle()
 {
+    unsigned int indices[] = {
+        0, 3, 1,
+        1, 3, 2,
+        2, 3, 0,
+        0, 1, 2
+    };
+
     GLfloat vertices[] = {
             -1.0f, -1.0f, 0.0f,
+            0.0f, -1.0f, 1.0f,
             1.0f, -1.0f, 0.0f,
             0.0f, 1.0f, 0.0f
     };
@@ -73,6 +81,10 @@ void CreateTriangle()
     glGenVertexArrays(1, &VAO);
     // Now all the vertex operations in OpenGL will refer to that vertex array
     glBindVertexArray(VAO);
+
+    glGenBuffers(1, &IBO);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
     glGenBuffers(1, &VBO);
     // You need to specify what type of buffer you're binding
@@ -90,8 +102,10 @@ void CreateTriangle()
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
     glEnableVertexAttribArray(0);
 
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
+
     glBindVertexArray(0);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 
 void AddShader(GLuint theProgram, const char * shaderCode, GLenum shaderType)
@@ -224,6 +238,8 @@ int main(void) {
         return -1;
     }
 
+    glEnable(GL_DEPTH_TEST);
+
     // Setup Viewport size
     glViewport(0, 0, bufferWidth, bufferHeight);
 
@@ -253,17 +269,21 @@ int main(void) {
         }
 
         // Clear the colors buffer
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         glUseProgram(shader);
 
         glm::mat4 model;
 
-        // Rotate around z axis by
-        model = glm::rotate(model,  360 * triOffset * toRadians, glm::vec3(0,0,1));
+
         // Order of transformations matter! This way the translation left and rate is relative to current rotation
-        model = glm::translate(model, glm::vec3(triOffset, triOffset, 0.0f));
-        model = glm::scale(model, glm::vec3(triOffset, triOffset, 0.0f));
+
+
+        // Rotate around y axis by
+        model = glm::rotate(model,  360 * triOffset * toRadians, glm::vec3(0,1,0));
+
+
+        model = glm::scale(model, glm::vec3(0.4, 0.4, 0.4));
 
         // The triangle gets weirdly distorted because the coordinate system is relative to the screen which isn't square but rectangle
 
@@ -271,9 +291,12 @@ int main(void) {
         glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
 
         glBindVertexArray(VAO);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO);
 
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glDrawElements(GL_TRIANGLES, 12, GL_UNSIGNED_INT, 0);
 
+
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
         glBindVertexArray(0);
 
         glUseProgram(0);
