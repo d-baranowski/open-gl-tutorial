@@ -10,6 +10,7 @@
 #include <glm/vec4.hpp> // glm::vec4
 #include <glm/mat4x4.hpp> // glm::mat4
 #include <Mesh.h>
+#include <Shader.h>
 
 
 // Include GLEW Extension Wrangler
@@ -22,9 +23,8 @@
 const GLint WIDTH = 800, HEIGHT = 600;
 const float toRadians = 3.1415926535 / 180.0f; // Multiply by this to get a radians from angle
 
-GLuint shader, uniformModel, uniformProjection;
-
 std::vector<Mesh*> meshList;
+std::vector<Shader*> shaderList;
 
 bool direction = true;
 float triOffset = 0.0f;
@@ -87,92 +87,11 @@ void CreateTriangle()
     meshList.push_back(obj);
 }
 
-void AddShader(GLuint theProgram, const char * shaderCode, GLenum shaderType)
+void CreateShader()
 {
-    GLuint theShader = glCreateShader(shaderType);
-
-    const GLchar *theCode[1];
-    theCode[0] = shaderCode;
-
-    GLint codeLength[1];
-    codeLength[0] = strlen(shaderCode);
-
-    // Load in the source code
-    glShaderSource(theShader, 1, theCode, codeLength);
-
-    // Compile the source code
-    glCompileShader(theShader);
-
-    // Error check
-    GLint result = 0;
-    GLchar eLog[1024] = { 0 };
-
-
-    // Validate if compiled and linked correctly
-
-    // Get program link status
-    glGetShaderiv(theShader, GL_COMPILE_STATUS, &result);
-
-    if (!result)
-    {
-        glGetShaderInfoLog(theShader, sizeof(eLog), NULL, eLog);
-        printf("Error compiling %u shader program: %s\n", shaderType, eLog);
-        return;
-    }
-
-    glAttachShader(theProgram, theShader);
-}
-
-void CompileShaders()
-{
-    shader = glCreateProgram();
-
-    if (!shader)
-    {
-        printf("Error creating shader");
-        return;
-    }
-
-    AddShader(shader, vShader, GL_VERTEX_SHADER);
-    AddShader(shader, fShader, GL_FRAGMENT_SHADER);
-
-    GLint result = 0;
-    GLchar eLog[1024] = { 0 };
-
-    // Create executables on the graphics card
-    glLinkProgram(shader);
-
-    // Validate if compiled and linked correctly
-
-    // Get program link status
-    glGetProgramiv(shader, GL_LINK_STATUS, &result);
-
-    if (!result)
-    {
-        glGetProgramInfoLog(shader, sizeof(eLog), NULL, eLog);
-        printf("Error linking program: %s\n", eLog);
-        return;
-    }
-
-
-    GLuint temp;
-    glGenVertexArrays(1, &temp);
-    glBindVertexArray(temp);
-    glValidateProgram(shader);
-    glDeleteVertexArrays(1, &temp);
-
-    // Get program validation status
-    glGetProgramiv(shader, GL_VALIDATE_STATUS, &result);
-
-    if (!result)
-    {
-        glGetProgramInfoLog(shader, sizeof(eLog), NULL, eLog);
-        printf("Program is not valid: %s\n", eLog);
-        return;
-    }
-
-    uniformModel = glGetUniformLocation(shader, "model");
-    uniformProjection =  glGetUniformLocation(shader, "projection");
+    Shader *shader = new Shader();
+    shader->CreateFromString(vShader, fShader);
+    shaderList.push_back(shader);
 }
 
 int main(void) {
@@ -228,7 +147,7 @@ int main(void) {
     // Setup Viewport size
     glViewport(0, 0, bufferWidth, bufferHeight);
 
-    CompileShaders();
+    CreateShader();
     CreateTriangle();
 
     glm::mat4 projection = glm::perspective(45.0f, (GLfloat)bufferWidth / (GLfloat)bufferHeight, 0.1f, 100.0f);
@@ -258,7 +177,7 @@ int main(void) {
         // Clear the colors buffer
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        glUseProgram(shader);
+        shaderList[0]->UserShader();
 
         glm::mat4 model;
 
@@ -268,6 +187,10 @@ int main(void) {
         model = glm::rotate(model,  360 * triOffset * toRadians, glm::vec3(0,0,1));
         model = glm::scale(model, glm::vec3(0.4, 0.4, 1));
 
+        GLuint uniformModel, uniformProjection;
+
+        uniformModel = shaderList[0]->GetModelLocation();
+        uniformProjection = shaderList[0]->GetProjectionLocation();
 
         glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
         glUniformMatrix4fv(uniformProjection, 1, GL_FALSE, glm::value_ptr(projection));

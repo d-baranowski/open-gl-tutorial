@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/Mesh.cpp" "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles/open_gl_tutorial.dir/Mesh.cpp.o"
+  "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/Shader.cpp" "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles/open_gl_tutorial.dir/Shader.cpp.o"
   "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/main.cpp" "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles/open_gl_tutorial.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

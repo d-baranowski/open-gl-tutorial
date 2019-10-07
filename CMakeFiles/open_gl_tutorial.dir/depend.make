@@ -5,8 +5,13 @@ CMakeFiles/open_gl_tutorial.dir/Mesh.cpp.o: Mesh.cpp
 CMakeFiles/open_gl_tutorial.dir/Mesh.cpp.o: Mesh.h
 CMakeFiles/open_gl_tutorial.dir/Mesh.cpp.o: external/glew-1.13.0/include/GL/glew.h
 
+CMakeFiles/open_gl_tutorial.dir/Shader.cpp.o: Shader.cpp
+CMakeFiles/open_gl_tutorial.dir/Shader.cpp.o: Shader.h
+CMakeFiles/open_gl_tutorial.dir/Shader.cpp.o: external/glew-1.13.0/include/GL/glew.h
+
 CMakeFiles/open_gl_tutorial.dir/main.cpp.o: main.cpp
 CMakeFiles/open_gl_tutorial.dir/main.cpp.o: Mesh.h
+CMakeFiles/open_gl_tutorial.dir/main.cpp.o: Shader.h
 CMakeFiles/open_gl_tutorial.dir/main.cpp.o: external/glew-1.13.0/include/GL/glew.h
 CMakeFiles/open_gl_tutorial.dir/main.cpp.o: external/glfw-3.1.2/include/GLFW/glfw3.h
 CMakeFiles/open_gl_tutorial.dir/main.cpp.o: external/glm-0.9.7.1/glm/common.hpp

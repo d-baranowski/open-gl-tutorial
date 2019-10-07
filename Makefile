@@ -625,6 +625,33 @@ Mesh.cpp.s:
 	$(MAKE) -f CMakeFiles/open_gl_tutorial.dir/build.make CMakeFiles/open_gl_tutorial.dir/Mesh.cpp.s
 .PHONY : Mesh.cpp.s
 
+Shader.o: Shader.cpp.o
+
+.PHONY : Shader.o
+
+# target to build an object file
+Shader.cpp.o:
+	$(MAKE) -f CMakeFiles/open_gl_tutorial.dir/build.make CMakeFiles/open_gl_tutorial.dir/Shader.cpp.o
+.PHONY : Shader.cpp.o
+
+Shader.i: Shader.cpp.i
+
+.PHONY : Shader.i
+
+# target to preprocess a source file
+Shader.cpp.i:
+	$(MAKE) -f CMakeFiles/open_gl_tutorial.dir/build.make CMakeFiles/open_gl_tutorial.dir/Shader.cpp.i
+.PHONY : Shader.cpp.i
+
+Shader.s: Shader.cpp.s
+
+.PHONY : Shader.s
+
+# target to generate assembly for a file
+Shader.cpp.s:
+	$(MAKE) -f CMakeFiles/open_gl_tutorial.dir/build.make CMakeFiles/open_gl_tutorial.dir/Shader.cpp.s
+.PHONY : Shader.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -701,6 +728,9 @@ help:
 	@echo "... Mesh.o"
 	@echo "... Mesh.i"
 	@echo "... Mesh.s"
+	@echo "... Shader.o"
+	@echo "... Shader.i"
+	@echo "... Shader.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
