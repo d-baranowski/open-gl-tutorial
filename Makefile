@@ -598,6 +598,33 @@ LinearMath/fast:
 	$(MAKE) -f external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/build.make external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/build
 .PHONY : LinearMath/fast
 
+Mesh.o: Mesh.cpp.o
+
+.PHONY : Mesh.o
+
+# target to build an object file
+Mesh.cpp.o:
+	$(MAKE) -f CMakeFiles/open_gl_tutorial.dir/build.make CMakeFiles/open_gl_tutorial.dir/Mesh.cpp.o
+.PHONY : Mesh.cpp.o
+
+Mesh.i: Mesh.cpp.i
+
+.PHONY : Mesh.i
+
+# target to preprocess a source file
+Mesh.cpp.i:
+	$(MAKE) -f CMakeFiles/open_gl_tutorial.dir/build.make CMakeFiles/open_gl_tutorial.dir/Mesh.cpp.i
+.PHONY : Mesh.cpp.i
+
+Mesh.s: Mesh.cpp.s
+
+.PHONY : Mesh.s
+
+# target to generate assembly for a file
+Mesh.cpp.s:
+	$(MAKE) -f CMakeFiles/open_gl_tutorial.dir/build.make CMakeFiles/open_gl_tutorial.dir/Mesh.cpp.s
+.PHONY : Mesh.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -671,6 +698,9 @@ help:
 	@echo "... BulletCollision"
 	@echo "... BulletDynamics"
 	@echo "... LinearMath"
+	@echo "... Mesh.o"
+	@echo "... Mesh.i"
+	@echo "... Mesh.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

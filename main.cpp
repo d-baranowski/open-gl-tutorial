@@ -2,12 +2,14 @@
 #include <stdio.h>
 #include <string.h>
 #include <cmath>
+#include <vector>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/vec3.hpp> // glm::vec3
 #include <glm/vec4.hpp> // glm::vec4
 #include <glm/mat4x4.hpp> // glm::mat4
+#include <Mesh.h>
 
 
 // Include GLEW Extension Wrangler
@@ -20,7 +22,9 @@
 const GLint WIDTH = 800, HEIGHT = 600;
 const float toRadians = 3.1415926535 / 180.0f; // Multiply by this to get a radians from angle
 
-GLuint VAO, VBO, IBO, shader, uniformModel, uniformProjection;
+GLuint shader, uniformModel, uniformProjection;
+
+std::vector<Mesh*> meshList;
 
 bool direction = true;
 float triOffset = 0.0f;
@@ -78,30 +82,9 @@ void CreateTriangle()
             0.0f, 1.0f, 0.0f
     };
 
-    // Create a vertex array on the graphics card and store the id in programs memory
-    glGenVertexArrays(1, &VAO);
-    // Now all the vertex operations in OpenGL will refer to that vertex array
-    glBindVertexArray(VAO);
-
-    glGenBuffers(1, &IBO);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-
-    glGenBuffers(1, &VBO);
-    // You need to specify what type of buffer you're binding
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-
-    // Send data to Vertex Buffer, since image won't move we use GL_STATIC_DRAW
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-
-    // 0 corresponds to vertex shader layout 0,
-    // 3 determines that each vertex has three values xyz
-    // Type of the values
-    // Specify if values should be normalised
-    // Specify whats the stride between sets of values
-    // Specify the offset of the first value from the start
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, 0);
-    glEnableVertexAttribArray(0);
+    Mesh* obj = new Mesh();
+    obj->CreateMesh(vertices, indices, 12 ,12);
+    meshList.push_back(obj);
 }
 
 void AddShader(GLuint theProgram, const char * shaderCode, GLenum shaderType)
@@ -171,7 +154,12 @@ void CompileShaders()
         return;
     }
 
+
+    GLuint temp;
+    glGenVertexArrays(1, &temp);
+    glBindVertexArray(temp);
     glValidateProgram(shader);
+    glDeleteVertexArrays(1, &temp);
 
     // Get program validation status
     glGetProgramiv(shader, GL_VALIDATE_STATUS, &result);
@@ -240,8 +228,8 @@ int main(void) {
     // Setup Viewport size
     glViewport(0, 0, bufferWidth, bufferHeight);
 
-    CreateTriangle();
     CompileShaders();
+    CreateTriangle();
 
     glm::mat4 projection = glm::perspective(45.0f, (GLfloat)bufferWidth / (GLfloat)bufferHeight, 0.1f, 100.0f);
 
@@ -275,24 +263,17 @@ int main(void) {
         glm::mat4 model;
 
         // Rotate around y axis by
-        model = glm::translate(model,  glm::vec3(0,0,-3));
+        model = glm::translate(model,  glm::vec3(triOffset,triOffset,-3));
         model = glm::rotate(model,  360 * triOffset * toRadians, glm::vec3(0,1,0));
-        model = glm::scale(model, glm::vec3(0.4, 0.4, 0.4));
-
-
+        model = glm::rotate(model,  360 * triOffset * toRadians, glm::vec3(0,0,1));
+        model = glm::scale(model, glm::vec3(0.4, 0.4, 1));
 
 
         glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
         glUniformMatrix4fv(uniformProjection, 1, GL_FALSE, glm::value_ptr(projection));
 
-        glBindVertexArray(VAO);
-        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, IBO);
+        meshList[0]->RenderMesh();
 
-        glDrawElements(GL_TRIANGLES, 12, GL_UNSIGNED_INT, 0);
-
-
-        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-        glBindVertexArray(0);
         glUseProgram(0);
 
         // Swap buffers

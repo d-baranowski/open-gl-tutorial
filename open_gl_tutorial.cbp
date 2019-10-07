@@ -2048,6 +2048,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/Mesh.cpp">
+			<Option target="open_gl_tutorial"/>
+		</Unit>
+		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/Mesh.h">
+			<Option target="open_gl_tutorial"/>
+		</Unit>
 		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/external/AntTweakBar-1.16/src/AntPerfTimer.h">
 			<Option target="ANTTWEAKBAR_116_OGLCORE_GLFW"/>
 		</Unit>

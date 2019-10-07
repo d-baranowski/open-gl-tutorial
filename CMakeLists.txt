@@ -32,4 +32,4 @@ set(CMAKE_CXX_STANDARD 17)
 
 link_libraries(${ALL_LIBS})
 
-add_executable(open_gl_tutorial main.cpp)
+add_executable(open_gl_tutorial main.cpp Mesh.cpp Mesh.h)

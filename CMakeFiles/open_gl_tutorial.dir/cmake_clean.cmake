@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/open_gl_tutorial.dir/main.cpp.o"
+  "CMakeFiles/open_gl_tutorial.dir/Mesh.cpp.o"
   "open_gl_tutorial.pdb"
   "open_gl_tutorial"
 )

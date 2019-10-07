@@ -365,7 +365,7 @@ external/glfw-3.1.2/examples/preinstall:
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/all: external/glfw-3.1.2/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/build.make external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/depend
 	$(MAKE) -f external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/build.make external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num= "Built target heightmap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num=86 "Built target heightmap"
 .PHONY : external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/all
 
 # Include target in all.
@@ -375,7 +375,7 @@ all: external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 0
 .PHONY : external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/rule
@@ -550,7 +550,7 @@ clean: external/glfw-3.1.2/examples/CMakeFiles/particles.dir/clean
 external/glfw-3.1.2/examples/CMakeFiles/gears.dir/all: external/glfw-3.1.2/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f external/glfw-3.1.2/examples/CMakeFiles/gears.dir/build.make external/glfw-3.1.2/examples/CMakeFiles/gears.dir/depend
 	$(MAKE) -f external/glfw-3.1.2/examples/CMakeFiles/gears.dir/build.make external/glfw-3.1.2/examples/CMakeFiles/gears.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num= "Built target gears"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num=81 "Built target gears"
 .PHONY : external/glfw-3.1.2/examples/CMakeFiles/gears.dir/all
 
 # Include target in all.
@@ -560,7 +560,7 @@ all: external/glfw-3.1.2/examples/CMakeFiles/gears.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.1.2/examples/CMakeFiles/gears.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/examples/CMakeFiles/gears.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 0
 .PHONY : external/glfw-3.1.2/examples/CMakeFiles/gears.dir/rule
@@ -587,7 +587,7 @@ clean: external/glfw-3.1.2/examples/CMakeFiles/gears.dir/clean
 external/glfw-3.1.2/examples/CMakeFiles/boing.dir/all: external/glfw-3.1.2/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f external/glfw-3.1.2/examples/CMakeFiles/boing.dir/build.make external/glfw-3.1.2/examples/CMakeFiles/boing.dir/depend
 	$(MAKE) -f external/glfw-3.1.2/examples/CMakeFiles/boing.dir/build.make external/glfw-3.1.2/examples/CMakeFiles/boing.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num=77 "Built target boing"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num= "Built target boing"
 .PHONY : external/glfw-3.1.2/examples/CMakeFiles/boing.dir/all
 
 # Include target in all.
@@ -597,7 +597,7 @@ all: external/glfw-3.1.2/examples/CMakeFiles/boing.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.1.2/examples/CMakeFiles/boing.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/examples/CMakeFiles/boing.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 0
 .PHONY : external/glfw-3.1.2/examples/CMakeFiles/boing.dir/rule
@@ -857,7 +857,7 @@ clean: external/glfw-3.1.2/tests/CMakeFiles/empty.dir/clean
 external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/all: external/glfw-3.1.2/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/depend
 	$(MAKE) -f external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/build.make external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num=86 "Built target glfwinfo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num= "Built target glfwinfo"
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/all
 
 # Include target in all.
@@ -867,7 +867,7 @@ all: external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 0
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/rule
@@ -931,7 +931,7 @@ clean: external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/clean
 external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/all: external/glfw-3.1.2/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/depend
 	$(MAKE) -f external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/build.make external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num=89 "Built target monitors"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num= "Built target monitors"
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/all
 
 # Include target in all.
@@ -941,7 +941,7 @@ all: external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 0
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/rule
@@ -1116,7 +1116,7 @@ clean: external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/clean
 external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/all: external/glfw-3.1.2/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/depend
 	$(MAKE) -f external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/build.make external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num=81 "Built target gamma"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num= "Built target gamma"
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/all
 
 # Include target in all.
@@ -1126,7 +1126,7 @@ all: external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 0
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/rule
@@ -1190,7 +1190,7 @@ clean: external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/clean
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/all: external/glfw-3.1.2/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/depend
 	$(MAKE) -f external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/build.make external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num= "Built target msaa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num=89 "Built target msaa"
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/all
 
 # Include target in all.
@@ -1200,7 +1200,7 @@ all: external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 0
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/rule
@@ -1227,7 +1227,7 @@ clean: external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/clean
 external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/all: external/glfw-3.1.2/src/CMakeFiles/glfw.dir/all
 	$(MAKE) -f external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/depend
 	$(MAKE) -f external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/build.make external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num= "Built target clipboard"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles --progress-num=77 "Built target clipboard"
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/all
 
 # Include target in all.
@@ -1237,7 +1237,7 @@ all: external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/all
 
 # Build rule for subdir invocation for target.
 external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles 0
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/rule
