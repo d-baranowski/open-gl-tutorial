@@ -4,8 +4,7 @@
 
 #include "Window.h"
 
-Window::Window()
-{
+Window::Window() {
     width = 800;
     height = 600;
 }
@@ -34,9 +33,9 @@ int Window::initialise() {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
     // Open a window and create its OpenGL context
-    mainWindow = glfwCreateWindow(width, height, "Test Window", NULL, NULL);
+    mainWindow = glfwCreateWindow(width, height, "Test Window", nullptr, nullptr);
 
-    if (mainWindow == NULL) {
+    if (mainWindow == nullptr) {
         fprintf(stderr,
                 "Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorials.\n");
         getchar();

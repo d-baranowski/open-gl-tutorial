@@ -19,10 +19,6 @@ GLFW/glfw3.h
 -
 
 /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/main.cpp
-cstdio
--
-cmath
--
 vector
 -
 glm/glm.hpp
@@ -819,7 +815,7 @@ GL/glew.h
 -
 
 src/Shader.h
-stdio.h
+cstdio
 -
 string
 -

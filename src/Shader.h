@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <cstdio>
 #include <string>
 #include <iostream>
 #include <fstream>
@@ -12,13 +12,16 @@ class Shader {
 public:
     Shader();
 
-    void CreateFromFiles(const char* vertexFilePath, const char* fragmentFilePath);
-    std::string ReadFile(const char* fileLocation);
+    void CreateFromFiles(const char *vertexFilePath, const char *fragmentFilePath);
+
+    static std::string ReadFile(const char *fileLocation);
 
     GLuint GetProjectionLocation();
+
     GLuint GetModelLocation();
 
     void UserShader();
+
     void ClearShader();
 
     ~Shader();
@@ -26,8 +29,9 @@ public:
 private:
     GLuint shaderId, uniformProjection, uniformModel;
 
-    void CompileShader(const char* vertexCode, const char* fragmentCode);
-    void AddShader(GLuint theProgram, const char * shaderCode, GLenum shaderType);
+    void CompileShader(const char *vertexCode, const char *fragmentCode);
+
+    static void AddShader(GLuint theProgram, const char *shaderCode, GLenum shaderType);
 };
 
 

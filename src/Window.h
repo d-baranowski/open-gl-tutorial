@@ -10,14 +10,16 @@
 class Window {
 public:
     Window();
+
     int initialise();
 
     Window(GLint windowWidth, GLint windowHeight);
 
-    GLint getBufferWidth() { return bufferWidth;}
-    GLint getBufferHeight() { return bufferHeight;}
+    GLint getBufferWidth() { return bufferWidth; }
 
-    bool getShouldClose() { return glfwWindowShouldClose(mainWindow); }
+    GLint getBufferHeight() { return bufferHeight; }
+
+    bool getShouldClose() { return static_cast<bool>(glfwWindowShouldClose(mainWindow)); }
 
     void swapBuffers() { glfwSwapBuffers(mainWindow); }
 
@@ -25,7 +27,7 @@ public:
 
 private:
     GLFWwindow *mainWindow;
-    GLint  width, height;
+    GLint width, height;
     GLint bufferWidth, bufferHeight;
 };
 
