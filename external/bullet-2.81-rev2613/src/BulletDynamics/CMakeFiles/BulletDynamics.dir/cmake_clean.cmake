@@ -13,14 +13,14 @@ file(REMOVE_RECURSE
   "CMakeFiles/BulletDynamics.dir/ConstraintSolver/btSolve2LinearConstraint.cpp.o"
   "CMakeFiles/BulletDynamics.dir/ConstraintSolver/btTypedConstraint.cpp.o"
   "CMakeFiles/BulletDynamics.dir/ConstraintSolver/btUniversalConstraint.cpp.o"
+  "CMakeFiles/BulletDynamics.dir/Dynamics/Bullet-C-API.cpp.o"
   "CMakeFiles/BulletDynamics.dir/Dynamics/btDiscreteDynamicsWorld.cpp.o"
   "CMakeFiles/BulletDynamics.dir/Dynamics/btRigidBody.cpp.o"
   "CMakeFiles/BulletDynamics.dir/Dynamics/btSimpleDynamicsWorld.cpp.o"
-  "CMakeFiles/BulletDynamics.dir/Dynamics/Bullet-C-API.cpp.o"
   "CMakeFiles/BulletDynamics.dir/Vehicle/btRaycastVehicle.cpp.o"
   "CMakeFiles/BulletDynamics.dir/Vehicle/btWheelInfo.cpp.o"
-  "libBulletDynamics.pdb"
   "libBulletDynamics.a"
+  "libBulletDynamics.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

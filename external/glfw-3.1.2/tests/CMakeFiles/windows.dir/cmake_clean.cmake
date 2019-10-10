@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/windows.dir/windows.c.o"
-  "windows.pdb"
   "windows.app/Contents/MacOS/windows"
+  "windows.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

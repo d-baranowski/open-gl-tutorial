@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/Mesh.cpp" "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles/open_gl_tutorial.dir/Mesh.cpp.o"
-  "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/Shader.cpp" "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles/open_gl_tutorial.dir/Shader.cpp.o"
-  "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/main.cpp" "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles/open_gl_tutorial.dir/main.cpp.o"
+  "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/Mesh.cpp" "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles/open_gl_tutorial.dir/src/Mesh.cpp.o"
+  "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/Shader.cpp" "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles/open_gl_tutorial.dir/src/Shader.cpp.o"
+  "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/Window.cpp" "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles/open_gl_tutorial.dir/src/Window.cpp.o"
+  "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/main.cpp" "/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeFiles/open_gl_tutorial.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

@@ -8,8 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/zlib.dir/inftrees.c.o"
   "CMakeFiles/zlib.dir/trees.c.o"
   "CMakeFiles/zlib.dir/zutil.c.o"
-  "libz.pdb"
   "libz.a"
+  "libz.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
