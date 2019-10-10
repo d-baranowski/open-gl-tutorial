@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="open_gl_tutorial" targetName="monitors" />
+      <config projectName="open_gl_tutorial" targetName="sharing" />
+      <config projectName="open_gl_tutorial" targetName="gears" />
+      <config projectName="open_gl_tutorial" targetName="threads" />
+      <config projectName="open_gl_tutorial" targetName="simple" />
+      <config projectName="open_gl_tutorial" targetName="open_gl_tutorial" />
+      <config projectName="open_gl_tutorial" targetName="reopen" />
+      <config projectName="open_gl_tutorial" targetName="cursor" />
+      <config projectName="open_gl_tutorial" targetName="assimp" />
+      <config projectName="open_gl_tutorial" targetName="glfwinfo" />
+      <config projectName="open_gl_tutorial" targetName="clipboard" />
+      <config projectName="open_gl_tutorial" targetName="wave" />
+      <config projectName="open_gl_tutorial" targetName="BulletDynamics" />
+      <config projectName="open_gl_tutorial" targetName="tearing" />
+      <config projectName="open_gl_tutorial" targetName="windows" />
+      <config projectName="open_gl_tutorial" targetName="msaa" />
+      <config projectName="open_gl_tutorial" targetName="gamma" />
+      <config projectName="open_gl_tutorial" targetName="BulletSoftBody" />
+      <config projectName="open_gl_tutorial" targetName="heightmap" />
+      <config projectName="open_gl_tutorial" targetName="BulletCollision" />
+      <config projectName="open_gl_tutorial" targetName="events" />
+      <config projectName="open_gl_tutorial" targetName="empty" />
+      <config projectName="open_gl_tutorial" targetName="splitview" />
+      <config projectName="open_gl_tutorial" targetName="glfw" />
+      <config projectName="open_gl_tutorial" targetName="title" />
+      <config projectName="open_gl_tutorial" targetName="zlib" />
+      <config projectName="open_gl_tutorial" targetName="joysticks" />
+      <config projectName="open_gl_tutorial" targetName="GLEW_1130" />
+      <config projectName="open_gl_tutorial" targetName="boing" />
+      <config projectName="open_gl_tutorial" targetName="particles" />
+      <config projectName="open_gl_tutorial" targetName="LinearMath" />
+      <config projectName="open_gl_tutorial" targetName="iconify" />
+      <config projectName="open_gl_tutorial" targetName="ANTTWEAKBAR_116_OGLCORE_GLFW" />
+      <config projectName="open_gl_tutorial" targetName="uninstall" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Default" GENERATION_DIR="." />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="06ffe404-cf56-45cd-95de-e668a3e7f542" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Default" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="GLSL Shader" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectId" id="1RcHQiBv8o4iQeYNVZKpVdeQnGw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="CMake Application.open_gl_tutorial">
+    <configuration name="ANTTWEAKBAR_116_OGLCORE_GLFW" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="ANTTWEAKBAR_116_OGLCORE_GLFW" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BulletCollision" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="BulletCollision" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BulletDynamics" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="BulletDynamics" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BulletSoftBody" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="BulletSoftBody" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GLEW_1130" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="GLEW_1130" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinearMath" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="LinearMath" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="assimp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="assimp" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="boing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="boing" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="boing">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clipboard" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="clipboard" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="clipboard">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="cursor" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="cursor" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="cursor">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="empty" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="empty" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="empty">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="events" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="events" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="events">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gamma" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="gamma" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="gamma">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gears" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="gears" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="gears">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="glfw" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glfwinfo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="glfwinfo" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="glfwinfo">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="heightmap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="heightmap" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="heightmap">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iconify" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="iconify" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="iconify">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="joysticks" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="joysticks" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="joysticks">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="monitors" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="monitors" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="monitors">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="msaa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="msaa" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="msaa">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="particles" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="particles" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="particles">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reopen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="reopen" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="reopen">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sharing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="sharing" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="sharing">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="simple" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="simple" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="simple">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="splitview" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="splitview" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="splitview">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tearing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="tearing" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="tearing">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="threads" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="threads" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="threads">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="title" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="title" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="title">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="uninstall" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="wave" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="wave" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="wave">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="windows" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="windows" CONFIG_NAME="Default" RUN_TARGET_PROJECT_NAME="open_gl_tutorial" RUN_TARGET_NAME="windows">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="zlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="open_gl_tutorial" TARGET_NAME="zlib" CONFIG_NAME="Default">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.open_gl_tutorial" />
+      <item itemvalue="CMake Application.ANTTWEAKBAR_116_OGLCORE_GLFW" />
+      <item itemvalue="CMake Application.GLEW_1130" />
+      <item itemvalue="CMake Application.assimp" />
+      <item itemvalue="CMake Application.zlib" />
+      <item itemvalue="CMake Application.BulletCollision" />
+      <item itemvalue="CMake Application.BulletDynamics" />
+      <item itemvalue="CMake Application.BulletSoftBody" />
+      <item itemvalue="CMake Application.LinearMath" />
+      <item itemvalue="CMake Application.uninstall" />
+      <item itemvalue="CMake Application.boing" />
+      <item itemvalue="CMake Application.gears" />
+      <item itemvalue="CMake Application.heightmap" />
+      <item itemvalue="CMake Application.particles" />
+      <item itemvalue="CMake Application.simple" />
+      <item itemvalue="CMake Application.splitview" />
+      <item itemvalue="CMake Application.wave" />
+      <item itemvalue="CMake Application.glfw" />
+      <item itemvalue="CMake Application.clipboard" />
+      <item itemvalue="CMake Application.cursor" />
+      <item itemvalue="CMake Application.empty" />
+      <item itemvalue="CMake Application.events" />
+      <item itemvalue="CMake Application.gamma" />
+      <item itemvalue="CMake Application.glfwinfo" />
+      <item itemvalue="CMake Application.iconify" />
+      <item itemvalue="CMake Application.joysticks" />
+      <item itemvalue="CMake Application.monitors" />
+      <item itemvalue="CMake Application.msaa" />
+      <item itemvalue="CMake Application.reopen" />
+      <item itemvalue="CMake Application.sharing" />
+      <item itemvalue="CMake Application.tearing" />
+      <item itemvalue="CMake Application.threads" />
+      <item itemvalue="CMake Application.title" />
+      <item itemvalue="CMake Application.windows" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06ffe404-cf56-45cd-95de-e668a3e7f542" name="Default Changelist" comment="" />
+      <created>1569959449794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569959449794</updated>
+      <workItem from="1569959453135" duration="1610000" />
+      <workItem from="1569961249451" duration="1652000" />
+      <workItem from="1569963111304" duration="989000" />
+      <workItem from="1570034363491" duration="772000" />
+      <workItem from="1570035161781" duration="59000" />
+      <workItem from="1570035222148" duration="1222000" />
+      <workItem from="1570036485433" duration="5982000" />
+      <workItem from="1570139868616" duration="3206000" />
+      <workItem from="1570354821977" duration="9577000" />
+      <workItem from="1570482753064" duration="2918000" />
+      <workItem from="1570485953063" duration="369000" />
+      <workItem from="1570743209565" duration="542000" />
+      <workItem from="1570743791229" duration="26000" />
+      <workItem from="1570743827193" duration="3068000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
