@@ -8,18 +8,17 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-const float toRadians = static_cast<const float>(3.1415926535 / 180.0f); // Multiply by this to get a radians from angle
+const auto TO_RADIANS = static_cast<const float>(3.1415926535 / 180.0f); // Multiply by this to get a radians from angle
 
-Window mainWindow;
-std::vector<Mesh *> meshList;
-std::vector<Shader *> shaderList;
+Window MAIN_WINDOW;
+std::vector<Mesh *> MESH_LIST;
+std::vector<Shader *> SHADER_LIST;
 
-bool direction = true;
+static const char *V_SHADER = "src/shaders/vertex.glsl";
+static const char *F_SHADER = "src/shaders/fragment.glsl";
 
-static const char *vShader = "src/shaders/vertex.glsl";
-static const char *fShader = "src/shaders/fragment.glsl";
-
-void CreateTriangle() {
+void create_triangle()
+{
     unsigned int indices[] = {
             0, 3, 1,
             1, 3, 2,
@@ -35,57 +34,60 @@ void CreateTriangle() {
     };
 
     Mesh *obj = new Mesh();
-    obj->CreateMesh(vertices, indices, 12, 12);
-    meshList.push_back(obj);
+    obj->create_mesh(vertices, indices, 12, 12);
+    MESH_LIST.push_back(obj);
 }
 
-void CreateShader() {
+void create_shader()
+{
     auto *shader = new Shader();
-    shader->CreateFromFiles(vShader, fShader);
-    shaderList.push_back(shader);
+    shader->create_from_files(V_SHADER, F_SHADER);
+    SHADER_LIST.push_back(shader);
 }
 
-int main() {
-    mainWindow = Window(800, 600);
-    mainWindow.initialise();
+int main()
+{
+    MAIN_WINDOW = Window(800, 600);
+    MAIN_WINDOW.initialise();
 
-    CreateShader();
-    CreateTriangle();
+    create_shader();
+    create_triangle();
 
-    glm::mat4 projection = glm::perspective(45.0f, (GLfloat) mainWindow.getBufferWidth() /
-                                                   (GLfloat) mainWindow.getBufferHeight(), 0.1f, 100.0f);
+    glm::mat4 projection = glm::perspective(45.0f, (GLfloat) MAIN_WINDOW.get_buffer_width() /
+                                                   (GLfloat) MAIN_WINDOW.get_buffer_height(), 0.1f, 100.0f);
 
     glClearColor(0.5f, 0.5f, 0.4f, 0.0f);
 
-    while (!mainWindow.getShouldClose()) {
+    while (!MAIN_WINDOW.get_should_close())
+    {
         glfwPollEvents();
 
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        shaderList[0]->UserShader();
+        SHADER_LIST[0]->use_shader();
 
         glm::mat4 model;
 
         // Rotate around y axis by
         model = glm::translate(model, glm::vec3(0.0f, 0.0f, -3));
-        model = glm::rotate(model, 360 * 0.0f * toRadians, glm::vec3(0, 1, 0));
-        model = glm::rotate(model, 360 * 0.0f * toRadians, glm::vec3(0, 0, 1));
+        model = glm::rotate(model, 360 * 0.0f * TO_RADIANS, glm::vec3(0, 1, 0));
+        model = glm::rotate(model, 360 * 0.0f * TO_RADIANS, glm::vec3(0, 0, 1));
         model = glm::scale(model, glm::vec3(0.4, 0.4, 1));
 
-        GLuint uniformModel, uniformProjection;
+        GLuint uniform_model, uniform_projection;
 
-        uniformModel = shaderList[0]->GetModelLocation();
-        uniformProjection = shaderList[0]->GetProjectionLocation();
+        uniform_model = SHADER_LIST[0]->get_model_location();
+        uniform_projection = SHADER_LIST[0]->get_projection_location();
 
-        glUniformMatrix4fv(uniformModel, 1, GL_FALSE, glm::value_ptr(model));
-        glUniformMatrix4fv(uniformProjection, 1, GL_FALSE, glm::value_ptr(projection));
+        glUniformMatrix4fv(uniform_model, 1, GL_FALSE, glm::value_ptr(model));
+        glUniformMatrix4fv(uniform_projection, 1, GL_FALSE, glm::value_ptr(projection));
 
-        meshList[0]->RenderMesh();
+        MESH_LIST[0]->render_mesh();
 
         glUseProgram(0);
 
         // Swap buffers
-        mainWindow.swapBuffers();
+        MAIN_WINDOW.swap_buffers();
     }
 
     return 0;

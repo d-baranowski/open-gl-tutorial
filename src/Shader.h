@@ -8,30 +8,31 @@
 #define OPEN_GL_TUTORIAL_SHADER_H
 
 
-class Shader {
+class Shader
+{
 public:
     Shader();
 
-    void CreateFromFiles(const char *vertexFilePath, const char *fragmentFilePath);
+    void create_from_files(const char *vertex_file_path, const char *fragment_file_path);
 
-    static std::string ReadFile(const char *fileLocation);
+    static std::string read_file(const char *file_location);
 
-    GLuint GetProjectionLocation();
+    GLuint get_projection_location();
 
-    GLuint GetModelLocation();
+    GLuint get_model_location();
 
-    void UserShader();
+    void use_shader();
 
-    void ClearShader();
+    void clear_shader();
 
     ~Shader();
 
 private:
-    GLuint shaderId, uniformProjection, uniformModel;
+    GLuint shader_id, uniform_projection, uniform_model;
 
-    void CompileShader(const char *vertexCode, const char *fragmentCode);
+    void compile_shader(const char *vertexCode, const char *fragmentCode);
 
-    static void AddShader(GLuint theProgram, const char *shaderCode, GLenum shaderType);
+    static void add_shader(GLuint theProgram, const char *shader_code, GLenum shader_type);
 };
 
 

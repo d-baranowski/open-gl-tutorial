@@ -5,21 +5,22 @@
 #define OPEN_GL_TUTORIAL_MESH_H
 
 
-class Mesh {
+class Mesh
+{
 public:
     Mesh();
 
-    void CreateMesh(GLfloat *vertices, unsigned int *indices, unsigned int numOfVertices, unsigned int numOfIndices);
+    void create_mesh(GLfloat *vertices, unsigned int *indices, unsigned int num_of_vertices, unsigned int num_of_indices);
 
-    void RenderMesh();
+    void render_mesh();
 
-    void ClearMesh();
+    void clear_mesh();
 
     ~Mesh();
 
 private:
-    GLuint VAO, VBO, IBO;
-    GLsizei indexCount;
+    GLuint vertex_array_object_address, vertex_buffer_object_address, index_buffer_object_address;
+    GLsizei index_count;
 };
 
 

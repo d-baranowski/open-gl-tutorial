@@ -4,36 +4,40 @@
 
 #include "Shader.h"
 
-Shader::Shader() {
-    shaderId = 0;
-    uniformModel = 0;
-    uniformProjection = 0;
+Shader::Shader()
+{
+    shader_id = 0;
+    uniform_model = 0;
+    uniform_projection = 0;
 }
 
-void Shader::CompileShader(const char *vertexCode, const char *fragmentCode) {
-    shaderId = glCreateProgram();
+void Shader::compile_shader(const char *vertexCode, const char *fragmentCode)
+{
+    shader_id = glCreateProgram();
 
-    if (!shaderId) {
+    if (!shader_id)
+    {
         printf("Error creating shader");
         return;
     }
 
-    AddShader(shaderId, vertexCode, GL_VERTEX_SHADER);
-    AddShader(shaderId, fragmentCode, GL_FRAGMENT_SHADER);
+    add_shader(shader_id, vertexCode, GL_VERTEX_SHADER);
+    add_shader(shader_id, fragmentCode, GL_FRAGMENT_SHADER);
 
     GLint result = 0;
     GLchar eLog[1024] = {0};
 
     // Create executables on the graphics card
-    glLinkProgram(shaderId);
+    glLinkProgram(shader_id);
 
     // Validate if compiled and linked correctly
 
     // Get program link status
-    glGetProgramiv(shaderId, GL_LINK_STATUS, &result);
+    glGetProgramiv(shader_id, GL_LINK_STATUS, &result);
 
-    if (!result) {
-        glGetProgramInfoLog(shaderId, sizeof(eLog), nullptr, eLog);
+    if (!result)
+    {
+        glGetProgramInfoLog(shader_id, sizeof(eLog), nullptr, eLog);
         printf("Error linking program: %s\n", eLog);
         return;
     }
@@ -42,99 +46,112 @@ void Shader::CompileShader(const char *vertexCode, const char *fragmentCode) {
     GLuint temp;
     glGenVertexArrays(1, &temp);
     glBindVertexArray(temp);
-    glValidateProgram(shaderId);
+    glValidateProgram(shader_id);
     glDeleteVertexArrays(1, &temp);
 
     // Get program validation status
-    glGetProgramiv(shaderId, GL_VALIDATE_STATUS, &result);
+    glGetProgramiv(shader_id, GL_VALIDATE_STATUS, &result);
 
-    if (!result) {
-        glGetProgramInfoLog(shaderId, sizeof(eLog), nullptr, eLog);
+    if (!result)
+    {
+        glGetProgramInfoLog(shader_id, sizeof(eLog), nullptr, eLog);
         printf("Program is not valid: %s\n", eLog);
         return;
     }
 
-    uniformModel = static_cast<GLuint>(glGetUniformLocation(shaderId, "model"));
-    uniformProjection = static_cast<GLuint>(glGetUniformLocation(shaderId, "projection"));
+    uniform_model = static_cast<GLuint>(glGetUniformLocation(shader_id, "model"));
+    uniform_projection = static_cast<GLuint>(glGetUniformLocation(shader_id, "projection"));
 }
 
-void Shader::AddShader(GLuint theProgram, const char *shaderCode, GLenum shaderType) {
-    GLuint theShader = glCreateShader(shaderType);
+void Shader::add_shader(GLuint theProgram, const char *shader_code, GLenum shader_type)
+{
+    GLuint shader = glCreateShader(shader_type);
 
-    const GLchar *theCode[1];
-    theCode[0] = shaderCode;
+    const GLchar *code[1];
+    code[0] = shader_code;
 
-    GLint codeLength[1];
-    codeLength[0] = static_cast<GLint>(strlen(shaderCode));
+    GLint code_length[1];
+    code_length[0] = static_cast<GLint>(strlen(shader_code));
 
     // Load in the source code
-    glShaderSource(theShader, 1, theCode, codeLength);
+    glShaderSource(shader, 1, code, code_length);
 
     // Compile the source code
-    glCompileShader(theShader);
+    glCompileShader(shader);
 
     // Error check
     GLint result = 0;
-    GLchar eLog[1024] = {0};
+    GLchar e_log[1024] = {0};
 
 
     // Validate if compiled and linked correctly
 
     // Get program link status
-    glGetShaderiv(theShader, GL_COMPILE_STATUS, &result);
+    glGetShaderiv(shader, GL_COMPILE_STATUS, &result);
 
-    if (!result) {
-        glGetShaderInfoLog(theShader, sizeof(eLog), nullptr, eLog);
-        printf("Error compiling %u shader program: %s\n", shaderType, eLog);
+    if (!result)
+    {
+        glGetShaderInfoLog(shader, sizeof(e_log), nullptr, e_log);
+        printf("Error compiling %u shader program: %s\n", shader_type, e_log);
         return;
     }
 
-    glAttachShader(theProgram, theShader);
+    glAttachShader(theProgram, shader);
 }
 
-void Shader::UserShader() {
-    glUseProgram(shaderId);
+void Shader::use_shader()
+{
+    glUseProgram(shader_id);
 }
 
-void Shader::ClearShader() {
-    if (shaderId != 0) {
-        glDeleteProgram(shaderId);
-        shaderId = 0;
+void Shader::clear_shader()
+{
+    if (shader_id != 0)
+    {
+        glDeleteProgram(shader_id);
+        shader_id = 0;
     }
 
-    uniformModel = 0;
-    uniformProjection = 0;
+    uniform_model = 0;
+    uniform_projection = 0;
 }
 
-Shader::~Shader() {
-    ClearShader();
+Shader::~Shader()
+{
+    clear_shader();
 }
 
-GLuint Shader::GetModelLocation() {
-    return uniformModel;
+GLuint Shader::get_model_location()
+{
+    return uniform_model;
 }
 
-GLuint Shader::GetProjectionLocation() {
-    return uniformProjection;
+GLuint Shader::get_projection_location()
+{
+    return uniform_projection;
 }
 
-void Shader::CreateFromFiles(const char *vertexFilePath, const char *fragmentFilePath) {
-    std::string vertexString = ReadFile(vertexFilePath);
-    std::string fragmentString = ReadFile(fragmentFilePath);
+void Shader::create_from_files(const char *vertex_file_path, const char *fragment_file_path)
+{
+    std::string vertex_string = read_file(vertex_file_path);
+    std::string fragment_string = read_file(fragment_file_path);
 
-    CompileShader(vertexString.c_str(), fragmentString.c_str());
+    compile_shader(vertex_string.c_str(), fragment_string.c_str());
 }
 
-std::string Shader::ReadFile(const char *fileLocation) {
+std::string Shader::read_file(const char *file_location)
+{
     std::string content;
-    std::ifstream fileStream(fileLocation, std::ios::in);
+    std::ifstream fileStream(file_location, std::ios::in);
 
-    if (!fileStream.is_open()) {
-        printf("Failed to read %s file", fileLocation);
+    if (!fileStream.is_open())
+    {
+        printf("Failed to read %s file", file_location);
     }
 
     std::string line = line;
-    while (!fileStream.eof()) {
+    while (!fileStream.eof())
+    {
         std::getline(fileStream, line);
         content.append(line + "\n ");
     }

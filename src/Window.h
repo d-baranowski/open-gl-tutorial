@@ -7,28 +7,46 @@
 #define OPEN_GL_TUTORIAL_WINDOW_H
 
 
-class Window {
+class Window
+{
 public:
     Window();
 
-    int initialise();
+    void initialise();
 
-    Window(GLint windowWidth, GLint windowHeight);
+    bool* get_keys() { return keys; };
+    GLfloat get_x_change();
+    GLfloat get_y_change();
 
-    GLint getBufferWidth() { return bufferWidth; }
+    Window(GLint window_width, GLint window_height);
 
-    GLint getBufferHeight() { return bufferHeight; }
+    GLint get_buffer_width()
+    { return buffer_width; }
 
-    bool getShouldClose() { return static_cast<bool>(glfwWindowShouldClose(mainWindow)); }
+    GLint get_buffer_height()
+    { return buffer_height; }
 
-    void swapBuffers() { glfwSwapBuffers(mainWindow); }
+    bool get_should_close()
+    { return static_cast<bool>(glfwWindowShouldClose(main_window)); }
+
+    void swap_buffers()
+    { glfwSwapBuffers(main_window); }
 
     ~Window();
 
 private:
-    GLFWwindow *mainWindow;
+    GLFWwindow *main_window;
     GLint width, height;
-    GLint bufferWidth, bufferHeight;
+    GLint buffer_width, buffer_height;
+    bool keys[1024]; // ASCII range
+    GLfloat last_x, last_y, x_change, y_change;
+    bool mouse_first_moved;
+
+    void create_callbacks();
+
+    static void handle_keys(GLFWwindow *window, int key, int code, int action, int mode);
+
+    static void handle_mouse(GLFWwindow *window, double x_pos, double y_pos);
 };
 
 
