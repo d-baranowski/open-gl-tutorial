@@ -4340,6 +4340,12 @@
 		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/external/glfw-3.1.2/tests/windows.c">
 			<Option target="windows"/>
 		</Unit>
+		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/Camera.cpp">
+			<Option target="open_gl_tutorial"/>
+		</Unit>
+		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/Camera.h">
+			<Option target="open_gl_tutorial"/>
+		</Unit>
 		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/Mesh.cpp">
 			<Option target="open_gl_tutorial"/>
 		</Unit>

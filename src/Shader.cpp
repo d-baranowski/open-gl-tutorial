@@ -61,6 +61,7 @@ void Shader::compile_shader(const char *vertexCode, const char *fragmentCode)
 
     uniform_model = static_cast<GLuint>(glGetUniformLocation(shader_id, "model"));
     uniform_projection = static_cast<GLuint>(glGetUniformLocation(shader_id, "projection"));
+    uniform_view = static_cast<GLuint>(glGetUniformLocation(shader_id, "view"));
 }
 
 void Shader::add_shader(GLuint theProgram, const char *shader_code, GLenum shader_type)
@@ -114,6 +115,7 @@ void Shader::clear_shader()
 
     uniform_model = 0;
     uniform_projection = 0;
+    uniform_view = 0;
 }
 
 Shader::~Shader()
@@ -129,6 +131,11 @@ GLuint Shader::get_model_location()
 GLuint Shader::get_projection_location()
 {
     return uniform_projection;
+}
+
+GLuint Shader::get_view_location()
+{
+    return uniform_view;
 }
 
 void Shader::create_from_files(const char *vertex_file_path, const char *fragment_file_path)

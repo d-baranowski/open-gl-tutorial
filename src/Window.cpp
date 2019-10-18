@@ -130,6 +130,7 @@ GLfloat Window::get_y_change()
 {
     GLfloat temp = y_change;
     y_change = 0;
+
     return temp;
 }
 
@@ -137,5 +138,6 @@ GLfloat Window::get_x_change()
 {
     GLfloat temp = x_change;
     x_change = 0;
+
     return temp;
 }

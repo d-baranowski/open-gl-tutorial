@@ -3,39 +3,39 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="open_gl_tutorial" targetName="monitors" />
-      <config projectName="open_gl_tutorial" targetName="sharing" />
-      <config projectName="open_gl_tutorial" targetName="gears" />
-      <config projectName="open_gl_tutorial" targetName="threads" />
+      <config projectName="open_gl_tutorial" targetName="splitview" />
+      <config projectName="open_gl_tutorial" targetName="iconify" />
+      <config projectName="open_gl_tutorial" targetName="GLEW_1130" />
       <config projectName="open_gl_tutorial" targetName="simple" />
-      <config projectName="open_gl_tutorial" targetName="open_gl_tutorial" />
-      <config projectName="open_gl_tutorial" targetName="reopen" />
       <config projectName="open_gl_tutorial" targetName="cursor" />
-      <config projectName="open_gl_tutorial" targetName="assimp" />
-      <config projectName="open_gl_tutorial" targetName="glfwinfo" />
+      <config projectName="open_gl_tutorial" targetName="glfw" />
+      <config projectName="open_gl_tutorial" targetName="gears" />
       <config projectName="open_gl_tutorial" targetName="clipboard" />
-      <config projectName="open_gl_tutorial" targetName="wave" />
-      <config projectName="open_gl_tutorial" targetName="BulletDynamics" />
-      <config projectName="open_gl_tutorial" targetName="tearing" />
-      <config projectName="open_gl_tutorial" targetName="windows" />
-      <config projectName="open_gl_tutorial" targetName="msaa" />
-      <config projectName="open_gl_tutorial" targetName="gamma" />
+      <config projectName="open_gl_tutorial" targetName="boing" />
       <config projectName="open_gl_tutorial" targetName="BulletSoftBody" />
+      <config projectName="open_gl_tutorial" targetName="wave" />
+      <config projectName="open_gl_tutorial" targetName="empty" />
+      <config projectName="open_gl_tutorial" targetName="zlib" />
+      <config projectName="open_gl_tutorial" targetName="open_gl_tutorial" />
+      <config projectName="open_gl_tutorial" targetName="title" />
+      <config projectName="open_gl_tutorial" targetName="reopen" />
+      <config projectName="open_gl_tutorial" targetName="assimp" />
+      <config projectName="open_gl_tutorial" targetName="sharing" />
       <config projectName="open_gl_tutorial" targetName="heightmap" />
       <config projectName="open_gl_tutorial" targetName="BulletCollision" />
-      <config projectName="open_gl_tutorial" targetName="events" />
-      <config projectName="open_gl_tutorial" targetName="empty" />
-      <config projectName="open_gl_tutorial" targetName="splitview" />
-      <config projectName="open_gl_tutorial" targetName="glfw" />
-      <config projectName="open_gl_tutorial" targetName="title" />
-      <config projectName="open_gl_tutorial" targetName="zlib" />
-      <config projectName="open_gl_tutorial" targetName="joysticks" />
-      <config projectName="open_gl_tutorial" targetName="GLEW_1130" />
-      <config projectName="open_gl_tutorial" targetName="boing" />
-      <config projectName="open_gl_tutorial" targetName="particles" />
       <config projectName="open_gl_tutorial" targetName="LinearMath" />
-      <config projectName="open_gl_tutorial" targetName="iconify" />
-      <config projectName="open_gl_tutorial" targetName="ANTTWEAKBAR_116_OGLCORE_GLFW" />
+      <config projectName="open_gl_tutorial" targetName="events" />
+      <config projectName="open_gl_tutorial" targetName="glfwinfo" />
+      <config projectName="open_gl_tutorial" targetName="joysticks" />
+      <config projectName="open_gl_tutorial" targetName="BulletDynamics" />
+      <config projectName="open_gl_tutorial" targetName="msaa" />
+      <config projectName="open_gl_tutorial" targetName="tearing" />
       <config projectName="open_gl_tutorial" targetName="uninstall" />
+      <config projectName="open_gl_tutorial" targetName="ANTTWEAKBAR_116_OGLCORE_GLFW" />
+      <config projectName="open_gl_tutorial" targetName="threads" />
+      <config projectName="open_gl_tutorial" targetName="gamma" />
+      <config projectName="open_gl_tutorial" targetName="particles" />
+      <config projectName="open_gl_tutorial" targetName="windows" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -45,15 +45,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06ffe404-cf56-45cd-95de-e668a3e7f542" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/danielbaranowski.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Camera.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Camera.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mesh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mesh.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mesh.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mesh.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/CMakeFiles/GLEW_1130.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/CMakeFiles/GLEW_1130.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/external/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/assimp-3.0.1270/code/CMakeFiles/assimp.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/assimp-3.0.1270/code/CMakeFiles/assimp.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/assimp-3.0.1270/code/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/external/assimp-3.0.1270/code/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/BulletCollision.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/BulletCollision.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/empty.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/empty.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/events.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/events.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open_gl_tutorial.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/open_gl_tutorial.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shader.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Shader.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Shader.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Window.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shaders/vertex.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/vertex.glsl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,14 +122,14 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -339,7 +367,15 @@
       <workItem from="1570485953063" duration="369000" />
       <workItem from="1570743209565" duration="542000" />
       <workItem from="1570743791229" duration="26000" />
-      <workItem from="1570743827193" duration="7027000" />
+      <workItem from="1570743827193" duration="7551000" />
+      <workItem from="1570774780615" duration="1001000" />
+      <workItem from="1570788390459" duration="206000" />
+      <workItem from="1570811720829" duration="1738000" />
+      <workItem from="1570836962479" duration="1103000" />
+      <workItem from="1571253503488" duration="800000" />
+      <workItem from="1571428395689" duration="3423000" />
+      <workItem from="1571435779257" duration="57000" />
+      <workItem from="1571435845874" duration="5408000" />
     </task>
     <servers />
   </component>

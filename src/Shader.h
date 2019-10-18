@@ -21,6 +21,8 @@ public:
 
     GLuint get_model_location();
 
+    GLuint get_view_location();
+
     void use_shader();
 
     void clear_shader();
@@ -28,7 +30,7 @@ public:
     ~Shader();
 
 private:
-    GLuint shader_id, uniform_projection, uniform_model;
+    GLuint shader_id, uniform_projection, uniform_model, uniform_view;
 
     void compile_shader(const char *vertexCode, const char *fragmentCode);
 
