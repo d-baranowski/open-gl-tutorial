@@ -4358,6 +4358,12 @@
 		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/Shader.h">
 			<Option target="open_gl_tutorial"/>
 		</Unit>
+		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/Texture.cpp">
+			<Option target="open_gl_tutorial"/>
+		</Unit>
+		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/Texture.h">
+			<Option target="open_gl_tutorial"/>
+		</Unit>
 		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/Window.cpp">
 			<Option target="open_gl_tutorial"/>
 		</Unit>
@@ -4365,6 +4371,9 @@
 			<Option target="open_gl_tutorial"/>
 		</Unit>
 		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/main.cpp">
+			<Option target="open_gl_tutorial"/>
+		</Unit>
+		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/src/stb_image.h">
 			<Option target="open_gl_tutorial"/>
 		</Unit>
 		<Unit filename="/Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/CMakeLists.txt">

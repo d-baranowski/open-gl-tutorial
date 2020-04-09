@@ -1,3 +1,4 @@
+#define STB_IMAGE_IMPLEMENTATION
 #include <vector>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp> // glm::translate, glm::rotate, glm::scale, glm::perspective
@@ -8,9 +9,13 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include "Camera.h"
+#include "Texture.h"
 
 
 Camera CAMERA;
+
+Texture brickTexture;
+Texture dirtTexture;
 
 Window MAIN_WINDOW;
 std::vector<Mesh *> MESH_LIST;
@@ -31,15 +36,16 @@ void create_triangle()
             0, 1, 2
     };
 
+    // X, Y, Z, U V
     GLfloat vertices[] = {
-            -1.0f, -1.0f, 0.0f,
-            0.0f, -1.0f, 1.0f,
-            1.0f, -1.0f, 0.0f,
-            0.0f, 1.0f, 0.0f
+            -1.0f, -1.0f, 0.0f, 0.0f, 0.0f,
+            0.0f, -1.0f, 1.0f, 0.5f, 0.0f,
+            1.0f, -1.0f, 0.0f, 1.0f, 0.0f,
+            0.0f, 1.0f, 0.0f, 0.5f, 1.0f
     };
 
     Mesh *obj = new Mesh();
-    obj->create_mesh(vertices, indices, 12, 12);
+    obj->create_mesh(vertices, indices, 20, 12);
     MESH_LIST.push_back(obj);
 }
 
@@ -63,6 +69,11 @@ int main()
     create_shader();
     create_triangle();
     create_camera();
+
+    brickTexture = Texture("src/textures/brick.png");
+    brickTexture.LoadTexture();
+//    dirtTexture = Texture("src/textures/dirt.png");
+//    dirtTexture.LoadTexture();
 
     GLuint uniform_projection = 0, uniform_model = 0, uniform_view = 0;
     glm::mat4 projection = glm::perspective(45.0f, (GLfloat) MAIN_WINDOW.get_buffer_width() /
@@ -97,6 +108,7 @@ int main()
         glUniformMatrix4fv(uniform_projection, 1, GL_FALSE, glm::value_ptr(projection));
         glUniformMatrix4fv(uniform_view, 1, GL_FALSE, glm::value_ptr(CAMERA.calculate_view_matrix()));
 
+        brickTexture.UseTexture();
         MESH_LIST[0]->render_mesh();
 
         glUseProgram(0);

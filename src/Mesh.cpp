@@ -23,8 +23,14 @@ void Mesh::create_mesh(GLfloat *vertices, unsigned int *indices, unsigned int nu
     glBindBuffer(GL_ARRAY_BUFFER, vertex_buffer_object_address);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices[0]) * num_of_vertices, vertices, GL_STATIC_DRAW);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, nullptr);
+    // Stride is how many cells do we need to jump in the array to get to the next vertice since we have x y z and 2 texture reference values (u v) we need 5
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(vertices[0]) * 5, 0);
     glEnableVertexAttribArray(0);
+
+    // Use a different index than 0 (position) and care about two values (u and v) we need to offset by 3 since values 4 and 5 in each row of five correspond to u and v
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(vertices[0]) * 5, (void*)sizeof(vertices[0] * 3));
+    glEnableVertexAttribArray(1);
+
 
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);

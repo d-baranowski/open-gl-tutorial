@@ -32,4 +32,4 @@ set(CMAKE_CXX_STANDARD 17)
 
 link_libraries(${ALL_LIBS})
 
-add_executable(open_gl_tutorial src/main.cpp src/Mesh.cpp src/Mesh.h src/Shader.cpp src/Shader.h src/Window.cpp src/Window.h src/Camera.cpp src/Camera.h)
+add_executable(open_gl_tutorial src/main.cpp src/Mesh.cpp src/Mesh.h src/Shader.cpp src/Shader.h src/Window.cpp src/Window.h src/Camera.cpp src/stb_image.h src/Camera.h src/Texture.h src/Texture.cpp)
