@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "/Users/danielbaranowski/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.6015.37/CLion.app/Contents/bin/cmake/mac/bin/cmake"
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.15.3/bin/cmake
 
 # The command to remove a file.
-RM = "/Users/danielbaranowski/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.6015.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E remove -f
+RM = /usr/local/Cellar/cmake/3.15.3/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /Users/danielbaranowski/Workspace/personal/CLionProjects/open
 include external/glfw-3.1.2/CMakeFiles/uninstall.dir/progress.make
 
 external/glfw-3.1.2/CMakeFiles/uninstall:
-	cd /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/external/glfw-3.1.2 && "/Users/danielbaranowski/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/193.6015.37/CLion.app/Contents/bin/cmake/mac/bin/cmake" -P /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/external/glfw-3.1.2/cmake_uninstall.cmake
+	cd /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/external/glfw-3.1.2 && /usr/local/Cellar/cmake/3.15.3/bin/cmake -P /Users/danielbaranowski/Workspace/personal/CLionProjects/open-gl-tutorial/external/glfw-3.1.2/cmake_uninstall.cmake
 
 uninstall: external/glfw-3.1.2/CMakeFiles/uninstall
 uninstall: external/glfw-3.1.2/CMakeFiles/uninstall.dir/build.make
