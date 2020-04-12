@@ -45,89 +45,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06ffe404-cf56-45cd-95de-e668a3e7f542" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Texture.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Texture.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stb_image.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/textures/brick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/textures/dirt.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/open_gl_tutorial.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/CMakeFiles/ANTTWEAKBAR_116_OGLCORE_GLFW.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/CMakeFiles/ANTTWEAKBAR_116_OGLCORE_GLFW.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/CMakeFiles/GLEW_1130.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/CMakeFiles/GLEW_1130.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/assimp-3.0.1270/code/CMakeFiles/assimp.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/assimp-3.0.1270/code/CMakeFiles/assimp.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/assimp-3.0.1270/code/CMakeFiles/assimp.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/assimp-3.0.1270/code/CMakeFiles/assimp.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/assimp-3.0.1270/code/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external/assimp-3.0.1270/code/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/assimp-3.0.1270/contrib/zlib/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external/assimp-3.0.1270/contrib/zlib/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/BulletCollision.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/BulletCollision.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/BulletCollision.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/BulletCollision.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletCollision/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletCollision/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletDynamics/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletDynamics/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletSoftBody/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/BulletSoftBody/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/LinearMath/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external/bullet-2.81-rev2613/src/LinearMath/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/CMakeFiles/uninstall.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/CMakeFiles/uninstall.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/cmake_uninstall.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/cmake_uninstall.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/boing.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/boing.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/boing.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/boing.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/gears.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/gears.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/gears.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/gears.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/particles.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/particles.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/simple.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/simple.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/splitview.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/splitview.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/wave.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/CMakeFiles/wave.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/examples/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/examples/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/src/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/src/libglfw3.a" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/src/libglfw3.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/empty.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/empty.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/events.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/events.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/events.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/events.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/threads.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/threads.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/title.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/title.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/windows.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/CMakeFiles/windows.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/glfw-3.1.2/tests/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/external/glfw-3.1.2/tests/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/external/libGLEW_1130.a" beforeDir="false" afterPath="$PROJECT_DIR$/external/libGLEW_1130.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/open_gl_tutorial.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/open_gl_tutorial.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mesh.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mesh.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/fragment.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/fragment.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shaders/vertex.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/src/shaders/vertex.glsl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -479,26 +398,26 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="100" y="123" width="1480" height="827" key="DiffContextDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1586463561578" />
-    <state width="1638" height="279" key="GridCell.Tab.0.bottom" timestamp="1586646486623">
+    <state width="1638" height="279" key="GridCell.Tab.0.bottom" timestamp="1586652475262">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1586118058025" />
-    <state width="1638" height="279" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586646486623" />
-    <state width="1638" height="279" key="GridCell.Tab.0.center" timestamp="1586646486622">
+    <state width="1638" height="279" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1586652475262" />
+    <state width="1638" height="279" key="GridCell.Tab.0.center" timestamp="1586652475262">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1586118058023" />
-    <state width="1638" height="279" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586646486622" />
-    <state width="1638" height="279" key="GridCell.Tab.0.left" timestamp="1586646486622">
+    <state width="1638" height="279" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1586652475262" />
+    <state width="1638" height="279" key="GridCell.Tab.0.left" timestamp="1586652475261">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1586118058022" />
-    <state width="1638" height="279" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586646486622" />
-    <state width="1638" height="279" key="GridCell.Tab.0.right" timestamp="1586646486623">
+    <state width="1638" height="279" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1586652475261" />
+    <state width="1638" height="279" key="GridCell.Tab.0.right" timestamp="1586652475262">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1586118058024" />
-    <state width="1638" height="279" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586646486623" />
+    <state width="1638" height="279" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1586652475262" />
     <state width="1638" height="345" key="GridCell.Tab.1.bottom" timestamp="1586468777246">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

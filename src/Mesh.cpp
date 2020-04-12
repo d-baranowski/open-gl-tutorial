@@ -28,7 +28,7 @@ void Mesh::create_mesh(GLfloat *vertices, unsigned int *indices, unsigned int nu
     glEnableVertexAttribArray(0);
 
     // Use a different index than 0 (position) and care about two values (u and v) we need to offset by 3 since values 4 and 5 in each row of five correspond to u and v
-    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(vertices[0]) * 5, (void*)sizeof(vertices[0] * 3));
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(vertices[0]) * 5, (void*)(sizeof(vertices[0]) * 3));
     glEnableVertexAttribArray(1);
 
 
